@@ -2,4 +2,63 @@
 # Designed for 1920x1200 resolution (sorry my screen is weird lol)
 # Made by Jukelyn (jukelyn dot com)
 
+# Global Property
+title-text: "BMO Boot Menu"
+title-font: "Adventure Time Logo Regular 40"
+title-color: "#171717"
+desktop-image: "background.png"
+desktop-color: "#000000"
 
++ boot_menu {
+	top = 396
+	left = 636
+	width = 644
+	height = 408
+	item_font = "Adventure Time Logo Regular 32"
+	selected_item_font = "Adventure Time Logo Regular 32"
+	item_color = "#f0e7d3"
+	selected_item_color = "#ffffff"
+	selected_item_pixmap_style = "select_*.png"
+	item_height = 45
+	item_padding = 32
+	item_spacing = 20
+}
+
+# Info at bottom
++ hbox {
+	top = 1075
+	left = 704
+	width = 644
+	elements = {
+		+ label {
+			text = "Enter: "
+			font = "Adventure Time Logo Regular 16"
+			color = "#171717"
+		}
+		+ label {
+			text = "Boot Selection   "
+			font = "Adventure Time Logo Regular 16"
+			color = "#6bcb77"
+		}
+		+ label {
+			text = "E: "
+			font = "Adventure Time Logo Regular 16"
+			color = "#171717"
+		}
+		+ label {
+			text = "Edit Selection   "
+			font = "Adventure Time Logo Regular 16"
+			color = "#6bcb77"
+		}
+		+ label {
+			text = "C: "
+			font = "Adventure Time Logo Regular 16"
+			color = "#171717"
+		}
+		+ label {
+			text = "GRUB Commandline"
+			font = "Adventure Time Logo Regular 16"
+			color = "#6bcb77"
+		}
+	}
+}
